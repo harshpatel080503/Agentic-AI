@@ -36,7 +36,7 @@ def pdf_assistant(new: bool = False, user:str = "user"):
         if len(existing_run_ids) > 0:
             run_id = existing_run_ids[0]
 
-        assistant = Assistant(
+    assistant = Assistant(
             llm = Gemini(id="gemini-1.5-pro-latest"),
             run_id = run_id,
             user_id = user,
